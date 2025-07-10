@@ -163,13 +163,13 @@ const navLogo = document.getElementById('navLogo');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     navbar.classList.add('scrolled');
-    navLogo.src = 'assets/Logo_p.png';
-    navLogo.style.width = '6rem';
+    navLogo.src = 'assets/Logo_p.webp';
+    navLogo.style.width = '9rem';
     navLogo.style.marginBottom = '1rem';
   } else {
     navbar.classList.remove('scrolled');
-    navLogo.src = 'assets/Logo_w.png';
-    navLogo.style.width = '7rem';
+    // navLogo.src = 'assets/Logo_w.png';
+    navLogo.style.width = '9rem';
     navLogo.style.marginTop = '2rem';
     navLogo.style.marginBottom = '';
   }
@@ -321,10 +321,10 @@ window.addEventListener('resize', () => {
   moveSlide(0); // realign
 });
 
-// ✅ Autoplay every 4 seconds
+// ✅ Autoplay every 8 seconds
 setInterval(() => {
   moveSlide(1);
-}, 4000);
+}, 8000);
 
 
 
